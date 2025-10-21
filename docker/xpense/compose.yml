@@ -8,3 +8,4 @@ services:
       - ${SHARED_DATA}/xpense:/xpense/data
     environment:
       - TZ=${TZ}
+      - BACKUP_CRON_SCHEDULE=0 * * * *
