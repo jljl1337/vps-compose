@@ -1,5 +1,5 @@
 name: vps
 
 include:
-  - cloudflared/compose.yml
-  - xpense/compose.yml
+  - docker/cloudflared/compose.yml
+  - docker/xpense/compose.yml
