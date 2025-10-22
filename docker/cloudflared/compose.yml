@@ -4,7 +4,6 @@ services:
     image: cloudflare/cloudflared:latest
     container_name: vps-cloudflared-tunnel
     restart: unless-stopped
-    pull_policy: every_5m
     environment:
       - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
     command: tunnel --no-autoupdate run
