@@ -4,6 +4,7 @@ services:
     image: jljl1337/xpense:latest
     container_name: vps-xpense
     restart: unless-stopped
+    pull_policy: every_5m
     volumes:
       - ${SHARED_DATA}/xpense:/xpense/data
     environment:
